@@ -1,0 +1,10 @@
+{
+  "hgt_macro_f1": 0.9206,
+  "lnn_raw_features_f1": 0.9873,
+  "lnn_hgt_embeddings_f1": 0.9153,
+  "lnn_concat_f1": 0.9882,
+  "best_single_model": "concat",
+  "architecture": "HGT(128D) \u2192 LNN(temporal) \u2192 Ensemble",
+  "dataset_size": 5539,
+  "ablation_f1": 0.9149
+}

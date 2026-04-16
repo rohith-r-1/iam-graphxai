@@ -1,0 +1,22 @@
+{
+  "best_val_f1": 0.9205830709350007,
+  "test_f1_argmax": 0.9205830709350007,
+  "test_f1_calibrated": 0.9197061730981549,
+  "high_threshold": 0.25000000000000006,
+  "n_params": 760501,
+  "in_channels_dict": {
+    "policy": 38,
+    "service": 8,
+    "resource": 8,
+    "role": 8,
+    "user": 8
+  },
+  "node_types": [
+    "policy",
+    "service",
+    "resource",
+    "role",
+    "user"
+  ],
+  "n_edge_types": 5
+}

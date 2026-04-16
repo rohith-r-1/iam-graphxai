@@ -1,0 +1,32 @@
+======================================================================
+IAM POLICY RISK ANALYSIS: policy:E:\iam-graph-xai\data\aws-iam-managed-policies\data\json\AccessAnalyzerServiceRolePolicy\v10\policy
+======================================================================
+
+RISK LEVEL: Medium Risk
+Confidence: 100.00%
+
+Probability Distribution:
+  Low Risk:    0.00%
+  Medium Risk: 100.00%
+  High Risk:   N/A (not predicted)
+
+----------------------------------------------------------------------
+KEY RISK FACTORS (SHAP Analysis)
+----------------------------------------------------------------------
+
+1. out_degree = 75.00
+   Impact: increases risk by 0.3778
+
+2. service_count = 13.00
+   Impact: increases risk by 0.2655
+
+3. service_wildcard_count = 0.00
+   Impact: increases risk by 0.0129
+
+4. wildcard_entropy = 0.00
+   Impact: decreases risk by 0.0112
+
+5. specificity_score = 1.00
+   Impact: decreases risk by 0.0092
+
+======================================================================

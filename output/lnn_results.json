@@ -1,0 +1,24 @@
+{
+  "test_f1": 0.9778,
+  "best_val_f1": 0.9778,
+  "input_size": 38,
+  "dataset_size": 5539,
+  "label_distribution": {
+    "0": 3971,
+    "1": 326,
+    "2": 1242
+  },
+  "architecture": "ncps_ltc",
+  "epochs_trained": 290,
+  "smote_applied": true,
+  "cv_macro_f1": 0.989,
+  "cv_macro_f1_std": 0.0037,
+  "cv_fold_scores": [
+    0.9901,
+    0.9937,
+    0.9829,
+    0.991,
+    0.9871
+  ],
+  "n_splits": 5
+}

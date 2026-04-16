@@ -1,0 +1,12 @@
+{
+  "baseline_f1": 0.32250757843365613,
+  "rf_f1": 0.9972062451316627,
+  "rf_accuracy": 0.9990974729241877,
+  "xgb_f1": 1.0,
+  "xgb_accuracy": 1.0,
+  "improvement_over_baseline_pct": 209.20397281045618,
+  "n_features": 40,
+  "n_train": 4431,
+  "n_test": 1108,
+  "label_distribution": {
+    

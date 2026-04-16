@@ -1,0 +1,202 @@
+{
+  "baseline_macro_f1": 0.7406736300295093,
+  "features_used": [
+    "out_degree",
+    "in_degree",
+    "betweenness_centrality",
+    "pagerank",
+    "clustering_coefficient",
+    "ego_network_density",
+    "shortest_path_to_admin",
+    "attachment_count",
+    "service_count",
+    "resource_count",
+    "cross_account_edge_count",
+    "subgraph_modularity",
+    "wildcard_entropy",
+    "specificity_score",
+    "dangerous_action_count",
+    "has_wildcard_action",
+    "has_wildcard_resource",
+    "service_wildcard_count",
+    "action_diversity",
+    "resource_arn_specificity",
+    "permission_overlap_score",
+    "cross_service_permission_chains",
+    "escalation_path_count",
+    "min_escalation_path_length",
+    "escalation_techniques_enabled",
+    "passrole_chain_exists",
+    "createpolicyversion_exists",
+    "attachuserpolicy_exists",
+    "iam_write_permission_count",
+    "privilege_escalation_risk_score",
+    "has_mfa_condition",
+    "has_ip_restriction",
+    "has_time_restriction",
+    "condition_protection_score",
+    "is_bounded",
+    "policy_version_count",
+    "unused_permission_ratio",
+    "compliance_violation_count"
+  ],
+  "leaky_removed": [],
+  "train_size": 4431,
+  "test_size": 1108,
+  "label_distribution": {
+    "0": 3971,
+    "1": 326,
+    "2": 1242
+  },
+  "random_forest": {
+    "macro_f1": 0.9935736724770369,
+    "accuracy": 0.9972924187725631,
+    "cv_macro_f1_mean": 0.9933945685705805,
+    "cv_macro_f1_std": 0.0019309923856850129,
+    "confusion_matrix": [
+      [
+        792,
+        1,
+        1
+      ],
+      [
+        1,
+        64,
+        0
+      ],
+      [
+        0,
+        0,
+        249
+      ]
+    ],
+    "top_features": [
+      {
+        "feature": "compliance_violation_count",
+        "importance": 0.13052721033697381
+      },
+      {
+        "feature": "privilege_escalation_risk_score",
+        "importance": 0.11584481524705846
+      },
+      {
+        "feature": "service_count",
+        "importance": 0.08393906725273359
+      },
+      {
+        "feature": "permission_overlap_score",
+        "importance": 0.08194793993956302
+      },
+      {
+        "feature": "dangerous_action_count",
+        "importance": 0.04275633268591336
+      },
+      {
+        "feature": "iam_write_permission_count",
+        "importance": 0.042302301742173816
+      },
+      {
+        "feature": "shortest_path_to_admin",
+        "importance": 0.0388753968217921
+      },
+      {
+        "feature": "escalation_techniques_enabled",
+        "importance": 0.03411626999018916
+      },
+      {
+        "feature": "escalation_path_count",
+        "importance": 0.03400321902399013
+      },
+      {
+        "feature": "out_degree",
+        "importance": 0.033221551720863406
+      }
+    ]
+  },
+  "xgboost": {
+    "macro_f1": 0.9908577201764502,
+    "accuracy": 0.9963898916967509,
+    "confusion_matrix": [
+      [
+        791,
+        2,
+        1
+      ],
+      [
+        1,
+        64,
+        0
+      ],
+      [
+        0,
+        0,
+        249
+      ]
+    ]
+  },
+  "lightgbm": {
+    "macro_f1": 0.9908577201764502,
+    "accuracy": 0.9963898916967509,
+    "cv_macro_f1_mean": 0.9893386326950366,
+    "cv_macro_f1_std": 0.001789218308846699,
+    "confusion_matrix": [
+      [
+        791,
+        2,
+        1
+      ],
+      [
+        1,
+        64,
+        0
+      ],
+      [
+        0,
+        0,
+        249
+      ]
+    ],
+    "top_features": [
+      {
+        "feature": "pagerank",
+        "importance": 837
+      },
+      {
+        "feature": "out_degree",
+        "importance": 795
+      },
+      {
+        "feature": "ego_network_density",
+        "importance": 559
+      },
+      {
+        "feature": "privilege_escalation_risk_score",
+        "importance": 523
+      },
+      {
+        "feature": "subgraph_modularity",
+        "importance": 379
+      },
+      {
+        "feature": "condition_protection_score",
+        "importance": 376
+      },
+      {
+        "feature": "service_count",
+        "importance": 365
+      },
+      {
+        "feature": "clustering_coefficient",
+        "importance": 331
+      },
+      {
+        "feature": "compliance_violation_count",
+        "importance": 267
+      },
+      {
+        "feature": "dangerous_action_count",
+        "importance": 262
+      }
+    ]
+  }
+}

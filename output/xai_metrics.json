@@ -1,0 +1,35 @@
+{
+  "rf_macro_f1": 0.9936,
+  "xgb_macro_f1": 0.9909,
+  "lnn_macro_f1": 0.9778,
+  "lnn_cv_macro_f1": 0.989,
+  "lnn_cv_macro_f1_std": 0.0037,
+  "ensemble_macro_f1": 0.9936,
+  "faithfulness": 0.2696,
+  "shap_sufficiency": 0.3097,
+  "shap_completeness": 0.2296,
+  "shap_metric_type": "sufficiency + comprehensiveness (\u0394 confidence)",
+  "mean_confidence": 0.8524,
+  "high_risk_count": 1247,
+  "total_explained": 5539,
+  "llm_backend": "groq",
+  "llm_model": "llama-3.1-8b-instant",
+  "llm_calls_success": 31,
+  "llm_calls_fallback": 1543,
+  "evaluation_split": "held-out test (20%)",
+  "dataset_size": 5539,
+  "per_class_faithfulness": {
+    "LOW": {
+      "sufficiency": 0.4299,
+      "comprehensiveness": 0.2646
+    },
+    "MEDIUM": {
+      "sufficiency": 0.2591,
+      "comprehensiveness": 0.1395
+    },
+    "HIGH": {
+      "sufficiency": 0.24,
+      "comprehensiveness": 0.2848
+    }
+  }
+}
