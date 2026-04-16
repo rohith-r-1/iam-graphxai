@@ -10,7 +10,7 @@
 
 
 
-*Classifies AWS IAM policies as LOW / MEDIUM / HIGH risk with 99.7% accuracy and full explainability — SHAP attribution, MITRE ATT&CK mapping, and LLM-generated remediation narratives.*
+*IAM-GraphXAI is an end-to-end cloud security system that classifies AWS IAM policies as LOW / MEDIUM / HIGH risk using a three-tier machine learning pipeline — a Heterogeneous Graph Transformer that learns cross-policy permission relationships, a Liquid Neural Network that detects gradual privilege drift over time, and a Groq LLaMA reasoning agent that converts model outputs into plain-language attack narratives with MITRE ATT&CK mappings and deployable AWS policy fixes. Every prediction includes full SHAP explainability — not just a risk label, but the exact features that caused it and what to do about it.*
 
 </div>
 
@@ -30,9 +30,13 @@ No rule-based scanner catches this. IAM-GraphXAI does.
 
 IAM-GraphXAI is a three-tier ML pipeline that:
 
-1. **Detects** IAM policy risk using graph-aware models that understand cross-policy permission chains
-2. **Explains** every decision using TreeSHAP feature attribution — not just a label, but *why*
-3. **Remediates** using an LLM reasoning agent that generates plain-language attack narratives and deployable AWS policy fixes
+1. **Detects** IAM policy risk using graph-aware models that understand cross-policy permission chains — not just individual policies in isolation, but how permissions interact across users, roles, and services up to three hops deep in the permission graph.
+
+2. **Explains** every decision using TreeSHAP (TreeExplainer) feature attribution. Every prediction includes the top contributing features and their percentage impact — for example: *"HIGH risk because compliance_violation_count=4 (28% impact), dangerous_action_count=2 (14% impact), passrole_chain_exists=1 (6.5% impact)."* Security teams get actionable evidence, not just a label.
+
+3. **Remediates** using a Groq LLaMA 3.1 8B reasoning agent that reads the SHAP outputs and raw policy JSON, then generates a plain-language narrative explaining the attack scenario, what an attacker could do, and specific remediation steps — scoped to the actual actions in that policy. MITRE ATT&CK tactic mapping is deterministic and rule-based for guaranteed accuracy.
+
+The system processes a single IAM policy JSON via the Flask REST API and returns the full report — risk label, confidence, model breakdown (RF / HGT / LNN / Ensemble), SHAP top features, MITRE mapping, remediation steps, and LLM narrative — in under 3 seconds.
 
 ---
 
