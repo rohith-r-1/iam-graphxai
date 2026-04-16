@@ -46,3 +46,13 @@ runs/
 !assets/**
 !figures/**
 !docs/**
+
+fix*.py
+find_*.py
+check_*.py
+count_*.py
+inspect_*.py
+read_csv.py
+src/__pycache__/
+**/__pycache__/
+*.pyc
