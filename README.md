@@ -8,7 +8,6 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org)
 [![PyG](https://img.shields.io/badge/PyTorch_Geometric-2.3+-3C2179?style=flat)](https://pyg.org)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat)](LICENSE)
-[![Paper](https://img.shields.io/badge/IEEE-Paper-blue?style=flat)](docs/)
 
 
 
