@@ -7,7 +7,6 @@
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org)
 [![PyG](https://img.shields.io/badge/PyTorch_Geometric-2.3+-3C2179?style=flat)](https://pyg.org)
-[![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat)](LICENSE)
 
 
 
@@ -401,9 +400,10 @@ Combines RF (tabular accuracy), LNN (temporal context), and HGT (graph topology)
 
 ---
 
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
+### Authors
+Rohith R
+Anish R A
+Sri Sheshadri R
 
 ---
 
