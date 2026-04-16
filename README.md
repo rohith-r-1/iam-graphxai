@@ -10,7 +10,7 @@
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat)](LICENSE)
 [![Paper](https://img.shields.io/badge/IEEE-Paper-blue?style=flat)](docs/)
 
-**IEEE Paper · VIT University Chennai · 2026**
+
 
 *Classifies AWS IAM policies as LOW / MEDIUM / HIGH risk with 99.7% accuracy and full explainability — SHAP attribution, MITRE ATT&CK mapping, and LLM-generated remediation narratives.*
 
@@ -378,13 +378,6 @@ Combines RF (tabular accuracy), LNN (temporal context), and HGT (graph topology)
 
 ---
 
-## Paper
-
-This project was published as an IEEE paper at VIT University, Chennai (2026).
-
-**Full citation:**
-> Sri Sheshaadhri R, Anish R A, Rohith R, S A Amutha Jeevakumari. *"CloudShield AI: Explainable IAM Misconfiguration Detection Using Heterogeneous Graph Transformer and Liquid Neural Networks with LLM-Augmented Reasoning."* VIT University, Chennai, 2026.
-
 **References:**
 - Hu et al., *Heterogeneous Graph Transformer*, WWW 2020
 - Hasani et al., *Liquid Time-Constant Networks*, AAAI 2021
@@ -416,5 +409,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 ---
 
 <div align="center">
-Made with 🔐 at VIT University Chennai · 2026
 </div>
