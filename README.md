@@ -402,7 +402,9 @@ Combines RF (tabular accuracy), LNN (temporal context), and HGT (graph topology)
 
 ### Authors
 Rohith R
+
 Anish R A
+
 Sri Sheshadri R
 
 ---
